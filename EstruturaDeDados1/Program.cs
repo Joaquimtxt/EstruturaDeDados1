@@ -9,7 +9,7 @@
         //Imprimir os itens na listas
         Console.WriteLine("Minha Lista de Frutas:");
         frutas.ForEach(Console.WriteLine);
-        Console.WriteLine(" ");A
+        Console.WriteLine(" ");
 
         //Imprimir elemento na posição específica
         Console.WriteLine("Fruta no índice 2:" + frutas[2]);
@@ -47,6 +47,17 @@
         frutas.ForEach(Console.WriteLine);
         Console.WriteLine(" ");
 
+        // Trabalhando com Dicionário de Dados
+        Dictionary<int, string> carros = new Dictionary<int, string>();
+        //Adicionar Dados a um Dicionário
+        carros.Add(5, "Corsa");
+        carros.Add(10, "Fusca");
+        carros.Add(2, "Ford Ka");
 
+        //Imprimir um Dicionário de Dados
+        foreach (var carro in carros)
+        {
+            Console.WriteLine($"{carro.Key} - {carro.Value}");
+        }
     }
 }
